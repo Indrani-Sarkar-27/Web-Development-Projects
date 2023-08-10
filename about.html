@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			top: 0;
+			width: 100vw;
+			height: 70px;
+			line-height: 70px;
+		}
+		.navbar{
+			display: flex;
+			justify-content: space-around;
+			background: rgb(0,0,0,0.5);
+		}
+		.navbar h1{
+			color: orange;
+			font-size: 1.8rem;
+			text-shadow: 2px 2px 2px #000;
+			font-family: cursive;
+		}
+		.navbar ul{
+			display: flex;
+		}
+		.navbar ul li{
+			list-style: none;
+			padding: 3px 15px 3px 15px;
+		}
+		.navbar ul li:hover,.phone a:hover{
+			background: navy;
+			cursor: pointer;
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.3rem;
+		}
+		.phone a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.1rem;
+			padding: 3px 15px 3px 15px;
+			border:1px solid orange;
+
+		}
+		#mobile_menu{
+			display: none;
+			height: 40px;
+			line-height: 40px;
+			background-color: magenta;
+		}
+		#mobile_menu ul{
+			display: flex;
+			justify-content: center;
+
+		}
+		#mobile_menu ul li{
+			list-style: none;
+			padding: 0 5px 0 5px;
+		}
+		#mobile_menu ul li a{
+			text-decoration: none;
+			color: #fff;
+		}
+		#about{
+			padding: 25px 0 25px 0;
+		}
+		#section{
+			padding: 25px 0 25px 0;
+			text-align: center;
+			font-size: 2rem;
+			font-family: verdana;
+		}
+		#about_row{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 0 100px 0 100px;
+		}
+		.about_col{
+			flex: 1;
+		}
+		#about_img{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			margin: auto;
+		}
+		#about_img img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			object-fit: fill;
+		}
+		.about_col h1{
+			text-align: center;
+			font-family: cursive;
+		}
+		.about_col p{
+			text-align: justify;
+			font-weight: bold;
+		}
+		.footer{
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+			gap: 1.5rem;
+			margin-top: 2rem;
+			background: #fef4ea;
+			border-radius: 0.5rem;
+			padding: 20px;
+			background-color: #f9d494;
+		}
+		.footer-box {
+			display: flex;
+			flex-direction: column;
+		}
+		.footer-box p{
+			font-size: 0.938rem;
+			margin: 0.5rem 0 1rem;
+		}
+		.social{
+			display: flex;
+			align-items: center;
+			column-gap: 0.5rem;
+		}
+		.social .fa{
+			padding: 10px;
+			background: white;
+			color: green;
+			border-radius: 5rem;
+			font-size: 20px;
+		}
+		.social .fa:hover{
+			background: green;
+			color: white;
+			transition: 0.2s all linear;
+		}
+		.footer-box h2{
+			font-size: 1.1rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+		}
+		.footer-box a{
+			color: #868a92;
+			margin-bottom: 1rem;
+			text-decoration: none;
+			font-size: 17px;
+
+		}
+		.footer-box a:hover{
+			color: orange;
+		}
+		.footer-box form{
+			/*border-bottom: 1px solid;*/
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			column-gap: 0.5rem;
+		}
+
+		
+		.footer-box form .fa{
+			font-size: 20px;
+			cursor: pointer;
+		}
+		.footer-box form .fa-envelope{
+			color: green;
+		}
+		.copyright{
+			text-align: center;
+			padding: 20px;
+		}
+		@media screen and (max-width: 768px){
+			#mobile_menu{
+				display: block;
+			}
+			.navbar ul{
+				display: none;
+			}
+			html{
+				font-size: 95%;
+			}
+			#about_row{
+				flex-wrap: wrap;
+				padding: 0 10px 0 10px;
+			}
+		}
+		@media screen and (max-width: 360px){
+			html{
+				font-size: 70%;
+			}
+			#about_img{
+				width: 220px;
+				height: 220px;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<nav class="navbar">
+			<h1>Paradise Restaurant</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="chef.html">Chef</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="review.html">Review</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="phone">
+				<a href="tel:-+919832931287">+919832931287</a>
+			</div>
+		</nav>
+		<div id="mobile_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="chef.html">Chef</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="review.html">Review</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			
+			</ul>
+		</div>
+	</div>
+	<div id="about">
+		<h1 id="section">About</h1>
+		<div id="about_row">
+			<div class="about_col">
+				<h1>About Us</h1>
+				<p>
+					At Paradise Restaurant, we don't just make dishes. We make people happy. Paradise Restaurant was built on the belief that  every dishes should be special, and we carry that belief into everything we do. We understand how to best serve our customers through tried and true service principles: We create food we're proud to serve. The service felt like home. And the customers were treated like family. With consistency, dedication and perseverance, Paradise Restaurant, which started as a small roadside outlet is now known to be a profound multi-cuisine restaurant serving the dwellers of Kolkata. If you find yourself daydreaming about some deliciousness and wish to spice up your day, a visit to Paradise Restaurant can be quite satisfying and satiating. Find the best and most gorgeous culinary delights that dwell in the southern part of the city at Paradise Restaurant. 
+				</p>
+			</div>
+			<div class="about_col">
+				<div id="about_img">
+					<img src="img/c1.jpeg">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <section class="footer" id="footer">
+		<div class="footer-box">
+			<h2>Paradise Restaurant</h2>
+			<p>46, Ballygunge Gardens,<br>Kolkata-700019</p>
+			<div class="social">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-youtube"></i></a>
+				
+			</div>
+		</div>
+		<div class="footer-box">
+			<h2>Categories</h2>
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="chef.html">Chef</a>
+			<a href="about.html">About</a>
+		    <a href="review.html">Review</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<div class="footer-box">
+			<h2>Useful Links</h2>
+			<a href="#">Payment & Tax</a>
+			<a href="#">Terms of Use</a>
+			<a href="#">My Blog</a>
+		    <a href="#">Our Policy</a>
+		</div>
+		<div class="footer-box">
+			<h2>Project Member</h2>
+				<p>Indrani Sarkar</p>
+			<form action="">
+				<i class="fa fa-envelope"></i>
+				<input type="email" name="" id="" placeholder="Enter Your Email">
+				<i class="fa fa-arrow-right"aria-hidden="true"></i>
+			</form>
+		</div>
+	</section>
+	<div class="copyright">
+		<p>Copyright &copy;2023 | <a href="">Indrani Sarkar</p>
+	</div>
+
+</body>
+</html>

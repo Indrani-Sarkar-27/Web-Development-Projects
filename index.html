@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Paradise Restaurant</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.title{
+			position: relative;
+			width: 100%;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.title{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(img/resto.jpg);
+			background-size: cover;
+			background-position: center center;
+			filter: brightness(90%);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.title_content{
+			position: absolute;
+
+		}
+		.title_content h1{
+			color: white;
+			font-size: 2.8rem;
+			text-shadow: 2px 2px 2px #000;
+		}
+		.title_content h2{
+			color: white;
+			font-size: 2rem;
+			font-family: cursive;
+			margin-top: 1rem;
+			margin-bottom: 4rem;
+			text-shadow: 2px 2px 2px #000;
+		}
+		.title_content a{
+			color: white;
+			padding: 3px 20px 3px 20px;
+			border: 1px solid orange;
+			background: rgb(0,0,0,0.6);
+			font-size: 1.5rem;
+			text-decoration: none;
+			border-radius: 25px;
+
+		}
+		.title_content a:hover{
+			background: navy;
+		}
+		.header{
+			position: absolute;
+			top: 0;
+			width: 100vw;
+			height: 70px;
+			line-height: 70px;
+		}
+		.navbar{
+			display: flex;
+			justify-content: space-around;
+			background: rgb(0,0,0,0.5);
+		}
+		.navbar h1{
+			color: orange;
+			font-size: 1.8rem;
+			text-shadow: 2px 2px 2px #000;
+			font-family: cursive;
+		}
+		.navbar ul{
+			display: flex;
+		}
+		.navbar ul li{
+			list-style: none;
+			padding: 3px 15px 3px 15px;
+		}
+		.navbar ul li:hover,.phone a:hover,.btnLogin-popup:hover,#mobile_menu ul li:hover{
+			background: navy;
+			cursor: pointer;
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.3rem;
+		}
+		.phone a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.1rem;
+			padding: 3px 15px 3px 15px;
+			border:1px solid orange;
+		}
+		#mobile_menu{
+			display: none;
+			height: 40px;
+			line-height: 40px;
+			background-color: magenta;
+		}
+		#mobile_menu ul{
+			display: flex;
+			justify-content: center;
+
+		}
+		#mobile_menu ul li{
+			list-style: none;
+			padding: 0 5px 0 5px;
+		}
+		#mobile_menu ul li a{
+			text-decoration: none;
+			color: #fff;
+		}
+		
+		@media screen and (max-width: 768px){
+			#mobile_menu{
+				display: block;
+			}
+			.navbar ul{
+				display: none;
+			}
+			html{
+				font-size: 95%;
+			}
+		}
+		@media screen and (max-width: 360px){
+			html{
+				font-size: 70%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="title">
+		<div class="title_content">
+			<h1>Paradise Restaurant</h1>
+			<h2>Enjoy Your Delicious Food</h2>
+			<a href="menu.html">Menu</a>
+		</div>
+		
+	</div>
+
+	<div class="header">
+		<nav class="navbar">
+			<h1>Paradise Restaurant</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="chef.html">Chef</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="review.html">Review</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				
+			</ul>
+			
+			<div class="phone">
+				<a href="tel:-+919832931287">+919832931287</a>
+			</div>
+		</nav>
+		<div id="mobile_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="chef.html">Chef</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="review.html">Review</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			
+			</ul>
+		</div>
+	</div>
+
+	
+</body>
+</html>
